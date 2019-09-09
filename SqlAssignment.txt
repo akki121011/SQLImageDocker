@@ -1,0 +1,15 @@
+
+docker pull mysql
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql
+
+docker login 
+docker exec -it f41b02d9504c bash
+mysql -u root -p
+show databases;
+CREATE DATABASE  Employee;
+use employee;
+create table Info (EmpId INT, First_Name VARCHAR(20),Last_Name VARCHAR(20),Address VARCHAR(20),City VARCHAR(15), Department VARCHAR(10),Salary INT);
+insert into Info values ( "1" , "Test" , "Test" , "NY" , "Manhattan" , "Finance" , 1000 );
+select * from Info;
+exit
+exit
