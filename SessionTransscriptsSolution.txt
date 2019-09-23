@@ -18,7 +18,7 @@ Assignment:-
 
 Assignments:-
 1. How do we assign the existing volume(volume whose container is now dead) to new container?
-	docker exec -d -v <Path of localFile>:<Path of container>
+	docker start -d -v <Path of localFile>:<Path of container> <ContainerId>
 2. In Which scenario, will you assign an existing volume with some data to a new conatiner?
 	When we want to restore some data from saved data.
 
