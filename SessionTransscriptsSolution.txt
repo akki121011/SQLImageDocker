@@ -1,0 +1,25 @@
+
+			
+Assignment:-
+1. What is teh difference between COPY and ADD?
+	Copy-Let's you copy in local file or directory from host into docker image.
+	Add- It let you do that but it also support two other sources. 
+		1-From specific URL
+		2-From some tar file 
+2. What is the difference between RUN and CMD?
+	RUN-Allows you to install the required package and it creates images for the same.
+	CMD-It sets the default command which will get executed only 
+	    when you run containner without specifying any command.
+3. What is the difference between ENTRYPOINT and CMD?
+	ENTRYPOINT instruction allows you to configure a container that will run as an executable.
+	It looks similar to CMD, because it also allows you to specify a command with parameters. 
+	The difference is ENTRYPOINT command and parameters are not ignored when Docker container 
+	runs with command line parameters.
+
+Assignments:-
+1. How do we assign the existing volume(volume whose container is now dead) to new container?
+	docker exec -d -v <Path of localFile>:<Path of container>
+2. In Which scenario, will you assign an existing volume with some data to a new conatiner?
+	When we want to restore some data from saved data.
+
+
